@@ -1,0 +1,49 @@
+
+<!D<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出現ポケモン計算ツール</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <main>
+        <h1>出現ポケモン計算</h1>
+        <p>出現ポケモンが4～8体になる最低睡眠スコアと睡眠時間を計算します。</p>
+        <p>マップを選んでください</p>
+        <div class="map-contents">
+            <div class="map" id="map1" data-score4="965232" data-score5="2073695" data-score6="4626380" data-score7="8331417" data-score8="19563768">
+                <p>ワカクサ本島</p>
+            </div>
+            <div class="map" id="map2" data-score4="1574330" data-score5="3511235" data-score6="7162381" data-score7="13488280" data-score8="30492480">
+                <p>シアンの砂浜</p>
+            </div>
+            <div class="map" id="map3" data-score4="1834163" data-score5="4626380" data-score6="9936162" data-score7="19563554" data-score8="43716240">
+                <p>トープ 洞窟</p>
+            </div>
+            <div class="map" id="map4" data-score4="2831760" data-score5="7169800" data-score6="15471600" data-score7="28775360" data-score8="65712275">
+                <p>ウノハナ雪原</p>
+            </div>
+            <div class="map" id="map5" data-score4="3280084" data-score5="7752456" data-score6="16710948" data-score7="30514962" data-score8="68783664">
+                <p>ラピスラズリ湖畔</p>
+            </div>
+            <div class="map" id="map6" data-score4="6825000" data-score5="14200000" data-score6="29400000" data-score7="58000000" data-score8="130000000">
+                <p>未定</p>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="number" id="ep" name="ep" placeholder="エナジーを入力">
+            <button onclick="calculate()">計算</button>
+            <button class="multiplier" onclick="applyMultiplier(1.5)">1.5倍</button>
+            <button class="multiplier" onclick="applyMultiplier(2)">2倍</button>
+            <button class="multiplier" onclick="applyMultiplier(2.5)">2.5倍</button>
+            <button class="multiplier" onclick="applyMultiplier(3)">3倍</button>
+            <button class="multiplier" onclick="applyMultiplier(4)">4倍</button>
+        </div>
+        <p id="score">必要最低睡眠スコア: <span id="sleepScore"></span></p>
+        <p id="hour">必要最低睡眠時間: <span id="sleephour"></span></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html
