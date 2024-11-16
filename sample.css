@@ -134,15 +134,15 @@ button:hover {
 }
 
 #map6 {
-  background-image:none
+  background-image: url('gorukyuu2.jpg');
   transition: background-color 0.3s ease;
 }
 
 #map6.selected {
-  background-color: #4CAF50;
+  background-image: url('gorukyuu3.jpg');
   color: white;
 }
 
 #map6:hover {
-  background-color: #4CAF50;
+  background-image: url('gorukyuu3.jpg')
 }
